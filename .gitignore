@@ -8,6 +8,23 @@
 *.o
 *.obj
 
+# --- C++ Executables (Universal Rule) ---
+# Ignore all files in subdirectories that don't have an extension
+# This works for folders like /templates, /contests, /practice
+*/*
+# But don't ignore the folders themselves
+!*/
+# Allow all .cpp, .h, .md, and config files
+!**/*.cpp
+!**/*.h
+!**/*.md
+!**/*.json
+!**/*.sh
+!**/*.py
+!**/*.code-snippets
+!**/.gitignore
+!**/.clang-format
+
 # Debug symbols folder (macOS)
 *.dSYM/
 
