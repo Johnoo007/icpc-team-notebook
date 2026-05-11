@@ -31,7 +31,7 @@ This repository serves as the central hub for our ICPC journey. It is a "Living 
 ## 🤝 Team Guidelines
 1. **Readable Code:** Even in a contest, aim for clean logic in the `algorithms/` folder.
 2. **Post-Mortem:** After every contest, update `docs/` with at least one "Lesson Learned."
-3. **Template First:** Always start from `templates/default_template.cpp` to ensure consistent setup.
+3. **Template First:** Always start from `templates/template.cpp` to ensure consistent setup.
 
 ---
 *Maintained by [John Wongprasittigul](https://github.com/Johnoo007) and the ICPC 2026 Team.*
