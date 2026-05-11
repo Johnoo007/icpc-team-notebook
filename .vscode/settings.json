@@ -1,0 +1,11 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && clang++ -O3 -std=c++17 -I$workspaceRoot/include $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include"
+    ],
+    "editor.formatOnSave": false,
+    "C_Cpp.formatting": "default"
+}

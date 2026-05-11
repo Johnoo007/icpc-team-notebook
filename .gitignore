@@ -1,0 +1,33 @@
+# --- C++ Executables & Objects ---
+# Block all compiled binaries without extensions (common on macOS/Linux)
+
+# Block standard executable extensions
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Debug symbols folder (macOS)
+*.dSYM/
+
+# --- macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- VS Code Environment ---
+# We keep .vscode/ for shared settings, but ignore local history
+.history/
+*.log
+
+# --- Python (For stress_test scripts) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Local Test Files ---
+# Ignore local input/output files used for testing
+input.txt
+output.txt
