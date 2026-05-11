@@ -1,50 +1,50 @@
 # 🏆 ICPC Team Notebook (2026)
 
-This repository serves as the central hub for our ICPC team's competitive programming materials. It includes a curated collection of algorithms, contest templates, and a streamlined development environment optimized for macOS and competitive environments.
+คลังเก็บอัลกอริทึมและเทมเพลตสำหรับการแข่งขัน ICPC ของทีมเรา ภายในประกอบด้วย Code Snippets ที่ผ่านการคัดสรร, เทมเพลตสำหรับแข่งขัน และการตั้งค่าสภาพแวดล้อมการพัฒนา (Development Environment) ที่ปรับแต่งมาเพื่อ macOS และการเขียนโปรแกรมเชิงแข่งขันโดยเฉพาะ
 
-## 📂 Project Structure
+## 📂 โครงสร้างโปรเจกต์ (Project Structure)
 
-The repository is organized into specific domains to ensure quick access during contests:
+Repository นี้ถูกจัดระเบียบแยกตามโดเมนเพื่อให้เข้าถึงข้อมูลได้รวดเร็วที่สุดระหว่างการแข่งขัน:
 
-* **`.vscode/`**: Contains shared workspace settings, including build tasks and IntelliSense configurations.
-* **`algorithms/`**: Our "Holy Bible" of code. Separated by category: `data_structures`, `dp`, `graph`, `math`, `geometry`, and `string`.
-* **`contests/`**: Archived solutions and post-contest reviews from mock sessions and official competitions.
-* **`templates/`**: Boilerplate code for various scenarios (Default, Debug, and Stress Testing).
-* **`include/bits/`**: A custom implementation of `stdc++.h` to ensure cross-platform compatibility and local IntelliSense support.
-* **`docs/`**: Strategic documents including knowledge maps and contest strategies.
+* **`.vscode/`**: เก็บการตั้งค่า Workspace รวมถึง Build Tasks และการตั้งค่า IntelliSense เพื่อให้รันโค้ดได้ในคลิกเดียว
+* **`algorithms/`**: "คัมภีร์" อัลกอริทึมของเรา แบ่งตามหมวดหมู่: `data_structures`, `dp`, `graph`, `math`, `geometry`, และ `string`
+* **`contests/`**: พื้นที่เก็บ Solution และบทเรียน (Post-contest reviews) จากการซ้อม Mock Contest และการแข่งจริง
+* **`templates/`**: โค้ดเริ่มต้น (Boilerplate) สำหรับสถานการณ์ต่างๆ เช่น Default, Debug และ Stress Testing
+* **`include/bits/`**: ไฟล์ `stdc++.h` แบบกำหนดเอง เพื่อให้ใช้งาน IntelliSense บนเครื่องได้ลื่นไหลและรองรับการทำงานข้ามแพลตฟอร์ม
+* **`docs/`**: เอกสารเชิงกลยุทธ์ เช่น Knowledge Maps และแผนการเดินเกมระหว่างแข่ง (Contest Strategy)
 
-## 🚀 Getting Started (Setup)
+## 🚀 เริ่มต้นใช้งาน (Setup)
 
-### 1. Prerequisites
-Ensure you have a C++ compiler installed:
-* **macOS**: Install via Command Line Tools: `xcode-select --install`
-* **Windows**: Recommended to use **MinGW-w64** and add it to your System PATH.
+### 1. สิ่งที่ต้องติดตั้ง (Prerequisites)
+ตรวจสอบให้แน่ใจว่าเครื่องของคุณมี C++ Compiler:
+* **macOS**: ติดตั้งผ่าน Command Line Tools โดยพิมพ์ `xcode-select --install` ใน Terminal
+* **Windows**: แนะนำให้ใช้ **MinGW-w64** และเพิ่ม Path เข้าใน System Environment Variables
 
-### 2. VS Code Configuration
-We have optimized the workspace for a "one-click" run experience using **Code Runner**:
-* Open the project in VS Code.
-* Install recommended extensions listed in `.vscode/extensions.json`.
-* The `settings.json` is pre-configured to include our custom `bits/stdc++.h` path.
+### 2. การตั้งค่า VS Code
+เราได้ปรับแต่ง Workspace ให้รันโค้ดได้ง่ายที่สุดผ่าน **Code Runner**:
+* เปิดโปรเจกต์ด้วย VS Code
+* ติดตั้ง Extensions ที่แนะนำในไฟล์ `.vscode/extensions.json`
+* ไฟล์ `settings.json` ถูกตั้งค่าให้ดึงไฟล์ `bits/stdc++.h` จากโฟลเดอร์ `include` ของเราโดยอัตโนมัติ
 
-### 3. Usage
-* **Writing Code**: Use `templates/default_template.cpp` to start.
-* **Running**: Use the **Play button** (Code Runner) or `Ctrl+Alt+N` (`Cmd+Option+N` on Mac). The output will appear in the integrated terminal.
-* **Input**: Place your test cases in `input.txt` at the root for easy copying.
+### 3. วิธีการใช้งาน
+* **การเขียนโค้ด**: เริ่มต้นจากไฟล์ `templates/default_template.cpp`
+* **การรันโค้ด**: กดปุ่ม **Play** (Code Runner) หรือใช้คีย์ลัด `Cmd+Option+N` (Mac) / `Ctrl+Alt+N` (Windows) ผลลัพธ์จะแสดงใน Integrated Terminal ทันที
+* **การทดสอบ**: วางเคสทดสอบในไฟล์ `input.txt` ที่ Root ของโปรเจกต์เพื่อความสะดวกในการ Copy
 
-## 🛠 Maintenance & Cleanliness
+## 🛠 การดูแลรักษาและความสะอาด (Maintenance)
 
-### Git Guidelines
-To keep the repository clean from binaries and system-specific junk, we use a strict `.gitignore` policy.
-* **Binaries**: Compiled files (executables without extensions) are automatically ignored.
-* **System Files**: `.DS_Store` and other OS metadata are blocked.
+### กฎการใช้งาน Git
+เราใช้กฎ `.gitignore` ที่เข้มงวดเพื่อป้องกันไม่ให้ไฟล์ขยะหลุดขึ้นระบบ:
+* **ไฟล์ Executable**: ไฟล์ที่คอมไพล์แล้ว (ที่ไม่มีนามสกุล) จะถูก Ignore โดยอัตโนมัติ
+* **ไฟล์ระบบ**: ไฟล์จำพวก `.DS_Store` หรือ Metadata ของ OS จะถูกบล็อกทั้งหมด
 
-### Code Formatting
-While we focus on logic during contests, we aim for readable code in our `algorithms/` folder.
-* Use VS Code's default formatter (`Shift+Option+F`) to maintain consistency.
+### มาตรฐานการเขียนโค้ด
+ถึงแม้เราจะเน้นความเร็วระหว่างแข่ง แต่โค้ดในโฟลเดอร์ `algorithms/` ควรจะอ่านง่ายและเป็นระเบียบ:
+* ใช้ตัวจัดรูปแบบโค้ดมาตรฐานของ VS Code (`Shift+Option+F`) เพื่อให้สไตล์โค้ดของทุกคนในทีมตรงกัน
 
-## 🤝 Team Strategy
-* **Review Sessions**: After every mock contest, we document our mistakes in `docs/common_mistakes.md`.
-* **Notebook Updates**: Only verified and tested algorithms should be committed to the `algorithms/` directory.
+## 🤝 กลยุทธ์ของทีม
+* **Review Sessions**: หลังจบการซ้อมทุกครั้ง เราจะบันทึกข้อผิดพลาดที่พบบ่อยใน `docs/common_mistakes.md`
+* **Notebook Updates**: เฉพาะอัลกอริทึมที่ผ่านการทดสอบและพิสูจน์แล้วเท่านั้นที่จะถูกเก็บเข้าในโฟลเดอร์ `algorithms/`
 
 ---
-*Maintained by [John Wongprasittigul](https://github.com/Johnoo007)*
+*ดูแลโดย [John Wongprasittigul](https://github.com/Johnoo007)*
