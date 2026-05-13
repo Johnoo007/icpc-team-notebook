@@ -18,6 +18,8 @@ int main() {
     fastio();
     int t = 1;
     // cin >> t;
+    // freopen("tttt.in", "r", stdin);
+    // freopen("tttt.out", "w", stdout);
     while (t--) solve();
     return 0;
 }
