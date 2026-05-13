@@ -34,4 +34,7 @@ This repository serves as the central hub for our ICPC journey. It is a "Living 
 3. **Template First:** Always start from `templates/template.cpp` to ensure consistent setup.
 
 ---
-*Maintained by [John Wongprasittigul](https://github.com/Johnoo007) and the ICPC 2026 Team.*
+## Collaborators
+1. **John Wongprasittigul** 
+2. **Yanawut Sorntavorn**
+3. **Siwakorn Papapun**
