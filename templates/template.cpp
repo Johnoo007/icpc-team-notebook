@@ -17,9 +17,9 @@ void solve() {
 int main() {
     fastio();
     int t = 1;
-    // cin >> t;
     // freopen("tttt.in", "r", stdin);
     // freopen("tttt.out", "w", stdout);
+    // cin >> t;
     while (t--) solve();
     return 0;
 }
