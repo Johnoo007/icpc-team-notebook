@@ -18,6 +18,7 @@ void solve() {
     for(int i = 0 ; i < 2*N ; i++){
         string temp;
         cin >> temp;
+        vec.push_back(temp);
     }
 
     for(int i = 0 ; i < M ; i++){
