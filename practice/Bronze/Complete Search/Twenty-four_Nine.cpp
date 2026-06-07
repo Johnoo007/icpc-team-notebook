@@ -19,7 +19,7 @@ void backtracking(int n,float val){
         return;
     }
 
-    for(int i=0;i<4;i++){
+    for(int i=n;i<4;i++){
         backtracking(n+1,val+vec[i]);
         backtracking(n+1,val-vec[i]);
         if(i==0) continue;
